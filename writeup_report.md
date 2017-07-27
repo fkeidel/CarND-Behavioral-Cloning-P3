@@ -146,4 +146,4 @@ After training the model with the data of 4 laps, there was still a critical loc
 
 After increasing the adjustment value of the left and right camera image to +-0.4, the car managed to stay on the road.
 
-Here is a link to the [video](../blob/master/video.mp4) showing the car driving one lap without touching the borders of the road.
+Here is a link to the [video](../master/video.mp4) showing the car driving one lap without touching the borders of the road.
