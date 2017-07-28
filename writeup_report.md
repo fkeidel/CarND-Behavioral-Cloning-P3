@@ -9,7 +9,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[nvidia]: ./images/nvidia.png "NVIDIA ConvNet Architecture"
+[nvidia]: ./images/nvidia.PNG "NVIDIA ConvNet Architecture"
 [out-of-track]: ./images/out-of-track.png "car out of track"
 [center-lane-driving]: ./images/center-lane-driving.png "center lane driving"
 [left-cam]: ./images/left-cam.jpg "left cam"
@@ -100,7 +100,7 @@ The final model architecture (model.py lines 74-82) consisted of a convolution n
 
 #### 3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded one lap on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behavior, I first recorded one lap using center lane driving. Here is an example image of center lane driving:
 
 ![alt text][center-lane-driving]
 
@@ -108,7 +108,19 @@ The captured data of the simulater comprised 3 images per time step from 3 diffe
 
 To teach the car to recover from the left and right sides of the road, I used the images from the left and right cameras and adjusted the steering angles for the left and right camera images.
 
-| camera | adjustment |
+left cam
+
+![alt text][left-cam] 
+
+center cam
+
+![alt text][center-cam] 
+
+right cam
+
+![alt text][right-cam]
+
+| camera | angle adjustment value|
 |--------|------------|
 | left   | +0.2       |
 | center | 0          |
@@ -134,4 +146,4 @@ After training the model with the data of 4 laps, there was still a critical loc
 
 After increasing the adjustment value of the left and right camera image to +-0.4, the car managed to stay on the road.
 
-[video](../blob/master/video.mp4)
+Here is a link to the [video](../master/video.mp4) showing the car driving one lap without touching the borders of the road.
